@@ -41,7 +41,7 @@ string arrayToString(int a[], int size) {
 
 int indexOfMax(int *a, int n) {
 	assert(n >= 1);
-	int index;
+	int index=0;
 	for(int i = 0; i < n; i++) {
 		if(*(a+i) > a[index])
 			index = i;
