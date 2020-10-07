@@ -40,12 +40,12 @@ string arrayToString(int a[], int size) {
 //  You may assume size >= 1
 
 int indexOfMax(int *a, int n) {
-  int index;
-  for(int i = 0; i < n; i++) {
-  if(a[index] < *(a+i))
-    index = i;
-  }
-  return index; // Fixed, hopefully
+	int index;
+	for(int i = 0; i < n; i++) {
+		if(*(a+i) > a[index])
+			index = i;
+	}
+	return index; // Fixed, hopefully
 }
 
 // indexOfMin
