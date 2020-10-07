@@ -6,8 +6,8 @@ CXX=clang++
 helloWorld: helloWorld.o
 	${CXX} helloWorld.o -o helloWorld
 
-/* helloWorld.o: helloWorld.cpp
-	${CXX} -c helloWorld.cpp */
+helloWorld.o: helloWorld.cpp
+	${CXX} -c helloWorld.cpp
 
 clean:
 	/bin/rm -f *.o helloWorld lab00Test
