@@ -40,6 +40,7 @@ string arrayToString(int a[], int size) {
 //  You may assume size >= 1
 
 int indexOfMax(int *a, int n) {
+	assert(n >= 1);
 	int index;
 	for(int i = 0; i < n; i++) {
 		if(*(a+i) > a[index])
@@ -57,12 +58,13 @@ int indexOfMax(int *a, int n) {
 //  You may assume size >= 1
 
 int indexOfMin(int *a, int n) {
-  int index;
-  for(int i = 0; i < n; i++) {
-     if(a[index] > *(a+i))
-	index = i;
-  }
-  return index; // Fixed. I hate pointers
+  	assert(n >= 1);
+	int index;
+       	for(int i = 0; i < n; i++) {
+		 if(a[index] > *(a+i))
+		 	index = i;
+  	}
+  	return index; // Fixed. I hate pointers
 }
 
 //  swap
